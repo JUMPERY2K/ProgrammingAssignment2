@@ -6,11 +6,11 @@
 # * cacheInverse       get the cached value (inverse of the matrix)
 # * getInverse         get the cached value (inverse of the matrix)
 
-# the "x = numeric()" part works in the argument list of the function,
+# the "x = matrix()" part works in the argument list of the function,
 # but it seems to be creating a variable "x" that is not reachable from
 # the global environment, but is avaiable in the environment of the
 # makeCacheMatrix function
-makeCacheMatrix <- function(x = numeric()) {
+makeCacheMatrix <- function(x = matrix()) {
         
         # holds the cached value or NULL if nothing is cached
         # initially nothing is cached so set it to NULL
